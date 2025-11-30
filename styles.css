@@ -1,0 +1,584 @@
+/* ===========================
+   GHOST OF TSUSHIMA × ELDEN RING THEME  
+   =========================== */
+:root{
+  --bg:#0a0a0e;
+  --gold:#d4af37;
+  --gold-soft:#c9a135;
+  --fog:rgba(255,255,255,0.05);
+  --text:#e7e7e7;
+  --muted:#a6a6a6;
+  --card:#111114;
+}
+:root{
+  --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --text:#e6eef8;
+  --muted:#9fb3c8; --glass: rgba(255,255,255,0.04);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Inter, system-ui, Arial; background:linear-gradient(180deg,#071022 0%,#071826 100%); color:var(--text);
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:1100px;margin:0 auto;padding:1.5rem}
+.nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:0.5rem 0}
+.logo{font-weight:700;color:var(--text);text-decoration:none}
+.menu-btn{display:none;background:none;border:0;color:var(--text);font-size:1.4rem}
+.nav-links{display:flex;gap:0.6rem;list-style:none;padding:0;margin:0}
+.nav-links a{color:var(--muted);text-decoration:none;padding:0.4rem 0.6rem;border-radius:6px}
+.nav-links a:hover{color:var(--text);background:var(--glass)}
+.cta{background:linear-gradient(90deg,var(--accent),#4f46e5);padding:0.4rem 0.8rem;color:white;border-radius:6px}
+
+.hero{padding:3rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+.hero h1{font-size:2.1rem;margin:0 0 .5rem}
+.hero p{color:var(--muted);margin:0 0 1.2rem}
+.hero-img img{width:100%;border-radius:14px;object-fit:cover;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+.about, .projects, .skills, .contact{padding:2rem 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:12px}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h4{margin:.6rem 0 0}
+.card p{color:var(--muted);font-size:.95rem}
+.card-links{margin-top:.8rem;display:flex;gap:.5rem}
+.small{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:.35rem .5rem;border-radius:6px;color:var(--muted);text-decoration:none}
+
+.skill-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.skill-chips span{background:rgba(255,255,255,0.03);padding:.5rem .7rem;border-radius:999px;color:var(--muted)}
+
+.contact form{display:grid;gap:.6rem;max-width:540px}
+input, textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.6rem;border-radius:8px;color:var(--text)}
+label{display:block;font-size:.9rem}
+.btn{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:8px;border:0;text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text)}
+
+.footer{padding:1.2rem 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.02)}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .nav-links{display:none;position:absolute;right:1rem;top:64px;background:var(--card);padding:1rem;border-radius:8px;flex-direction:column}
+  .menu-btn{display:block}
+  .nav-links.show{display:flex}
+}
+
+
+body{
+  margin:0;
+  font-family: "Inter", system-ui;
+  background: radial-gradient(circle at center,#0c0c0f 0%, #070708 75%);
+  color:var(--text);
+  background-attachment: fixed;
+}
+
+/* Section Title — GOLD GLOW */
+.section-title{
+  font-size:2.4rem;
+  text-align:center;
+  margin-bottom:2.5rem;
+  letter-spacing:3px;
+  font-weight:700;
+  color:var(--gold);
+  text-shadow:0 0 12px rgba(212,175,55,0.45),0 0 3px var(--gold);
+}
+
+/* =====================
+   SKILLS SECTION 
+   ===================== */
+.skills{
+  padding:4rem 0;
+}
+
+.skill-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  justify-content:center;
+}
+
+.skill-chips span{
+  background:rgba(255,255,255,0.04);
+  padding:0.7rem 1.2rem;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.07);
+  color:var(--text);
+  font-size:1rem;
+  letter-spacing:1px;
+  backdrop-filter: blur(4px);
+  transition:.3s;
+}
+
+.skill-chips span:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+  box-shadow:0 0 12px rgba(212,175,55,0.35);
+  transform:translateY(-3px);
+}
+
+/* =====================
+   CONTACT SECTION
+   ===================== */
+.contact{
+  padding:4rem 0;
+}
+
+.contact-form{
+  max-width:600px;
+  margin:auto;
+  padding:2.5rem;
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:14px;
+  backdrop-filter: blur(6px);
+  box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+.contact-form label{
+  display:block;
+  margin-bottom:1.2rem;
+  font-size:1rem;
+  color:var(--muted);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  margin-top:0.4rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  padding:0.8rem;
+  border-radius:8px;
+  color:var(--text);
+  transition:.25s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:var(--gold);
+  color:var(--gold);
+  box-shadow:0 0 12px rgba(212,175,55,0.35);
+}
+
+/* GOLD BUTTON */
+.gold-btn{
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  padding:0.8rem 1.4rem;
+  border-radius:10px;
+  color:#000;
+  border:0;
+  cursor:pointer;
+  font-weight:700;
+  letter-spacing:1px;
+  width:100%;
+  margin-top:0.4rem;
+  transition:.25s;
+}
+
+.gold-btn:hover{
+  box-shadow:0 0 18px rgba(212,175,55,0.55);
+  transform:translateY(-3px);
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+.footer{
+  padding:2rem 0;
+  text-align:center;
+  font-size:0.95rem;
+  opacity:0.8;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,0.05);
+  margin-top:2rem;
+}
+
+.footer span{
+  color:var(--gold);
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width:900px){
+  .section-title{
+    font-size:2rem;
+  }
+  .contact-form{
+    padding:1.8rem;
+  }
+}
+/* ===========================
+   GHOST OF TSUSHIMA × ELDEN RING THEME  
+   =========================== */
+
+/* GOLD + DARK VARIABLES */
+:root{
+  --bg:#0a0a0e;
+  --bg2:#0c0c11;
+  --gold:#d4af37;
+  --gold-soft:#b89630;
+  --text:#e8e8e8;
+  --muted:#a1a1a1;
+  --fog:rgba(255,255,255,0.04);
+  --card:#111114;
+  --shadow:0 0 35px rgba(0,0,0,0.65);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family: "Inter", system-ui, sans-serif;
+  background: radial-gradient(circle at center, #08080b 0%, #040406 100%);
+  color:var(--text);
+  background-attachment:fixed;
+}
+
+/* Container */
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:1.5rem;
+}
+
+/* ===========================
+      NAVBAR
+   =========================== */
+
+.nav-wrap{
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  text-decoration:none;
+  font-size:1.6rem;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:1px;
+  text-shadow:0 0 10px rgba(212,175,55,0.45);
+}
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:0;
+  color:var(--text);
+  font-size:1.6rem;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:1rem;
+}
+
+.nav-links a{
+  color:var(--muted);
+  padding:0.5rem 0.8rem;
+  text-decoration:none;
+  border-radius:6px;
+  transition:0.25s;
+}
+
+.nav-links a:hover{
+  color:var(--gold);
+  background:rgba(255,255,255,0.04);
+  text-shadow:0 0 10px rgba(212,175,55,0.4);
+}
+
+.cta{
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  color:#000;
+  padding:0.5rem 1rem;
+  border-radius:8px;
+  font-weight:700;
+  transition:.25s;
+}
+
+.cta:hover{
+  box-shadow:0 0 12px rgba(212,175,55,0.6);
+}
+
+/* ===========================
+      HERO SECTION
+   =========================== */
+
+.hero{
+  padding:4rem 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 380px;
+  gap:2rem;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:3rem;
+  color:var(--gold);
+  letter-spacing:1px;
+  text-shadow:0 0 15px rgba(212,175,55,0.5);
+}
+
+.hero p{
+  color:var(--muted);
+  margin:0.8rem 0 1.4rem;
+  font-size:1.1rem;
+}
+
+.hero-cta{
+  display:flex;
+  gap:1rem;
+}
+
+.btn{
+  padding:0.8rem 1.3rem;
+  background:var(--gold);
+  color:#000;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.btn:hover{
+  box-shadow:0 0 20px rgba(212,175,55,0.55);
+}
+
+.btn.ghost{
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+}
+
+.hero-img img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+
+/* ===========================
+      ABOUT SECTION
+   =========================== */
+
+.about h2,
+.projects h2{
+  font-size:2.4rem;
+  color:var(--gold);
+  margin-bottom:1.5rem;
+  text-shadow:0 0 12px rgba(212,175,55,0.45);
+}
+
+.about p{
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+  margin-top:1.5rem;
+}
+
+.about-grid h3{
+  color:var(--gold);
+  margin-bottom:0.4rem;
+}
+
+/* ===========================
+      PROJECTS
+   =========================== */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.5rem;
+}
+
+.card{
+  background:rgba(255,255,255,0.03);
+  padding:1rem;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.06);
+  box-shadow:var(--shadow);
+  transition:.25s;
+}
+
+.card:hover{
+  border-color:var(--gold);
+  transform:translateY(-4px);
+  box-shadow:0 0 20px rgba(212,175,55,0.4);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card h4{
+  margin:0.8rem 0 0.4rem;
+}
+
+.card p{
+  color:var(--muted);
+}
+
+.card-links{
+  margin-top:.8rem;
+  display:flex;
+  gap:.5rem;
+}
+
+.small{
+  padding:0.4rem 0.6rem;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:.9rem;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.05);
+  transition:.2s;
+}
+
+.small:hover{
+  color:var(--gold);
+  border-color:var(--gold);
+}
+
+/* ===========================
+      SKILLS
+   =========================== */
+
+.section-title{
+  text-align:center;
+  font-size:2.4rem;
+  margin-bottom:2.4rem;
+  color:var(--gold);
+  text-shadow:0 0 12px rgba(212,175,55,0.45);
+}
+
+.skill-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  justify-content:center;
+}
+
+.skill-chips span{
+  padding:0.7rem 1.2rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:999px;
+  color:var(--text);
+  transition:.25s;
+}
+
+.skill-chips span:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+  box-shadow:0 0 15px rgba(212,175,55,0.4);
+}
+
+/* ===========================
+      CONTACT
+   =========================== */
+
+.contact-form{
+  max-width:600px;
+  margin:auto;
+  padding:2rem;
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  margin-top:0.4rem;
+  padding:0.8rem;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:8px;
+  color:var(--text);
+  transition:.25s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:var(--gold);
+  color:var(--gold);
+  box-shadow:0 0 15px rgba(212,175,55,0.4);
+}
+
+.gold-btn{
+  width:100%;
+  padding:0.9rem;
+  margin-top:0.8rem;
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft));
+  color:#000;
+  border:none;
+  border-radius:10px;
+  font-weight:700;
+}
+
+.gold-btn:hover{
+  box-shadow:0 0 18px rgba(212,175,55,0.55);
+}
+
+/* ===========================
+      FOOTER
+   =========================== */
+
+.footer{
+  text-align:center;
+  padding:2rem 0;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+.footer span{
+  color:var(--gold);
+}
+
+/* ===========================
+      RESPONSIVE
+   =========================== */
+
+@media (max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    right:1.5rem;
+    top:60px;
+    background:rgba(0,0,0,0.7);
+    padding:1rem;
+    border-radius:10px;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+}

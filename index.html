@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Affan Khurram — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="container nav">
+      <a class="logo" href="#">Affan</a>
+      <button id="menuBtn" class="menu-btn" aria-label="menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="cta" href="assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hi, I'm Affan</h1>
+          <p>Frontend Developer — building responsive, accessible, and delightful web experiences.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/amirali-parsa-KWbpZM_w8B4-unsplash.jpg" alt="Affan profile" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Me</h2>
+      <p>I’m a frontend developer focused on responsive UI, JS interactivity and clean code. I love building projects that look great and perform well.</p>
+      <div class="about-grid">
+        <div>
+          <h3>Experience</h3>
+          <p>Worked on personal projects & internships building websites, components and small apps.</p>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <p>Relevant coursework in Web Dev — HTML, CSS, JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+        <section id="projects" class="container projects">
+          <h2>Projects</h2>
+          <div class="cards">
+            <article class="card">
+              <img src="assets/lucas-gallone-SvhVkZs_ko4-unsplash.jpg" alt="Colorful gallery grid displaying multiple photographs with a modern, organized layout showcasing responsive design principles" />
+              <h4>Image Gallery</h4>
+              <p>Responsive gallery with filters & lightbox.</p>
+              <div class="card-links">
+                <a href="" class="small">Code</a>
+                <a href="#" class="small">Live</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <img src="assets/alexey-demidov-X20ZHa3WVZE-unsplash.jpg" alt="Digital calculator interface with numeric keypad, operation buttons, and display screen showing computation capability" />
+              <h4>Calculator</h4>
+          <p>Simple, keyboard-enabled calculator.</p>
+          <div class="card-links">
+            <a href="../CodeAlpha_Calculator" class="small">Code</a>
+            <a href="#" class="small">Live</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/karanjit-borah-4tBk9B6PYRY-unsplash.jpg" alt="Music player project" />
+          <h4>Music Player</h4>
+          <p>Playlist, controls, seek bar.</p>
+          <div class="card-links">
+            <a href="../CodeAlpha_MusicPlayer" class="small">Code</a>
+            <a href="#" class="small">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-chips">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Responsive Design</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<section id="contact" class="container contact">
+  <h2 class="section-title">Contact</h2>
+  <form id="contactForm" class="contact-form">
+    <label>
+      Your Name
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      Your Email
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      Your Message
+      <textarea name="message" rows="4" required></textarea>
+    </label>
+    <button type="submit" class="btn gold-btn">Send Message</button>
+    <p id="formMsg" class="muted"></p>
+  </form>
+</section>
+
+<footer class="container footer">
+  <p>© <span id="year"></span> Affan Khurram — Forged in Shadows ⚔️</p>
+</footer>
+    </main>
+    
+    <script src="scripts.js"></script>
