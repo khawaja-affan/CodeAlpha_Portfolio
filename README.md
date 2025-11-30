@@ -5,7 +5,7 @@ Successfully built my Portfolio Website as part of the CodeAlpha Frontend Intern
 ✔ Smooth animations  
 ✔ Clean project showcase
 
-GitHub Repo: <repo link>
+GitHub Repo: <https://khawaja-affan.github.io/CodeAlpha_Portfolio/>
 Live Demo: <live link>
 
 @CodeAlpha
